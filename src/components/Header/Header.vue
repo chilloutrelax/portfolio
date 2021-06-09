@@ -1,14 +1,14 @@
 <template>
   <header>
-    <nav class="navbar container">
+    <nav class="navbar container-fluid">
       <div class="brand">
         <router-link to="/"><h2 class="brand-op-1">RM</h2></router-link>
       </div>
       <div class="menu-box">
         <ul class="menu-items">
-          <li><router-link to="/about">About me</router-link></li>
-          <li><router-link to="/about">Portfolio</router-link></li>
-          <li><router-link to="/about">Contact</router-link></li>
+          <li>About me</li>
+          <li><router-link to="/portfolio">Portfolio</router-link></li>
+          <li><router-link to="/contact">Contact</router-link></li>
         </ul>
       </div>
     </nav>
@@ -23,8 +23,11 @@ export default {};
 @import "@/assets/variables.scss";
 
 header {
+  z-index: 10;
   position: absolute;
   width: 100%;
+  background: $color6;
+  padding: 0 10%;
 
   .navbar {
     display: flex;
@@ -33,7 +36,7 @@ header {
 
     .brand {
       h2 {
-        color: $color1;
+        color: $color2;
         font-size: 25px;
         line-height: 3rem;
       }

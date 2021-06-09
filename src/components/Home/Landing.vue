@@ -1,24 +1,26 @@
 <template>
   <div class="landing">
-    <div class="first-section vh95 container">
+    <div class="first-section vh95 container-fluid">
       <div class="hero">
-        <div class="welcome-text col-6">
+        <div class="hero-space col-8"></div>
+
+        <div class="hero-image col-4">
+          <div class="image-wrapper">
+            <!-- <img
+              class="animate__animated animate__backInRight animate__delay-1s image-1"
+              src=""
+              alt=""
+            /> -->
+          </div>
+        </div>
+
+        <div class="welcome-text">
           <h1 class="animate__animated animate__backInLeft animate__delay-1s">
             Riko Murutalu
           </h1>
           <h2 class="animate__animated animate__backInLeft animate__delay-1s">
             Web development enthusiast
           </h2>
-        </div>
-
-        <div class="hero-image col-6">
-          <div class="image-wrapper">
-            <img
-              class="animate__animated animate__backInRight animate__delay-1s image-1"
-              src=""
-              alt=""
-            />
-          </div>
         </div>
       </div>
 
@@ -52,20 +54,33 @@
 }
 
 .first-section {
+  padding: 0 !important;
   .hero {
     position: relative;
     display: flex;
     flex-direction: row;
     width: 100%;
+    height: 100%;
     top: 50%;
     transform: translateY(-50%);
 
+    .hero-space {
+      background: $color1;
+    }
+
     .welcome-text {
       /*background-color: white;*/
-      width: 100%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 10%;
+      width: 60%;
+      height: 30%;
+      background: $color2;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      padding: 0px 40px;
 
       h1 {
         font-family: $font2;
@@ -81,20 +96,10 @@
         font-size: 25px;
       }
     }
+  }
 
-    .hero-image {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-content: center;
-      align-items: center;
-      width: 100%;
-
-      img {
-        width: 400px;
-        z-index: 6;
-      }
-    }
+  .hero-image {
+    background: $color4;
   }
 
   .hero-icon {

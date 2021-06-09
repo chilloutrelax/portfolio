@@ -11,7 +11,12 @@ import "./assets/layout.scss";
 import "./assets/variables.scss";
 import "./assets/bs_overwrite.scss";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 Vue.config.productionTip = false;
+
+AOS.init();
 
 new Vue({
   router,
