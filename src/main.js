@@ -5,6 +5,8 @@ import router from "./router";
 import "bootstrap";
 import "animate.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "jquery";
+import "@popperjs/core";
 import "@fortawesome/fontawesome-free";
 
 import "./assets/layout.scss";

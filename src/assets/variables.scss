@@ -1,25 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;600;700&display=swap");
 
 $font1: "Open Sans", sans-serif;
 $font2: "Roboto", sans-serif;
+$font3: "Signika Negative", sans-serif;
 
-$color1: #fff;
-$color2: #fff;
-$color3: #fff;
-$color4: #fff;
-$color5: #fff;
+$fsize1: 16px; /*Menu buttons*/
+$fsize2: 42px; /*Brand letters and main titles*/
+$fsize3: 72; /*Landing title*/
+$fsize4: 30; /*Title 2nd*/
+$fsize5: 20; /*Text on page*/
+$fsize6: 24; /*Focus title*/
+$fisze7: 36; /*Textbutton*/
 
-$fsize1: 10px;
-$fsize2: 12px;
-$fsize3: 14px;
-$fsize4: 16px;
-$fsize5: 20px;
-$fsize6: 24px;
-
-$color1: #83bca9;
-$color2: #f0f4ef;
-$color3: #a24936;
-$color4: #d36135;
-$color5: #282b28;
-$color6: #0d1821;
+$colorW: white;
+$colorB: black;
+$color1: #e8ddb5; /*Landing title*/
+$color2: #bb6b00; /*Menüü pealkirjad*/
+$color3: #a95515; /*Landing alatitle*/
+$color4: #3b0207; /*Pole hetkel*/
+$color5: #cc9e2b;
+$color6: #333333; /*header bg*/
+$color7: rgb(196, 36, 36); /*Pole kuskil hetkel*/
