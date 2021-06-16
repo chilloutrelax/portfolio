@@ -28,8 +28,8 @@ export default {};
 @import "@/assets/variables.scss";
 
 header {
-  border-bottom: 1px solid rgba(171, 163, 89, 0.1);
   .navbar {
+    border-bottom: 1px solid rgba(171, 163, 89, 0.1);
     .brand {
       display: flex;
 

@@ -1,28 +1,33 @@
 <template>
-  <div class="landing-area">
-    <div class="container-fluid">
-      <div class="col h-landing">
-        <LandingName></LandingName>
+  <div class="landing-area container-fluid">
+    <div class="row height-100">
+      <div class="col-8 p-0">
+        <LandingName
+          fullName="Riko Murutalu"
+          title="Front-end developer"
+        ></LandingName>
+      </div>
+      <div class="col-4">
         <LandingImg></LandingImg>
       </div>
     </div>
 
-    <div class="">
-      <BottomArea></BottomArea>
+    <div class="lading-bottom">
+      <!-- <BottomArea></BottomArea> -->
     </div>
   </div>
 </template>
 
 <script>
-import LandingName from "@/components/Aboutme/LandingName";
-import LandingImg from "@/components/Aboutme/LandingImg";
-import BottomArea from "@/components/Aboutme/BottomArea";
+import LandingName from "@/components/Landing/LandingName";
+import LandingImg from "@/components/Landing/LandingImg";
+// import BottomArea from "@/components/Landing/BottomArea";
 
 export default {
   components: {
     LandingName,
     LandingImg,
-    BottomArea,
+    // BottomArea,
   },
 };
 </script>
@@ -38,9 +43,9 @@ export default {
     #ffecd1 99.99%,
     rgba(204, 230, 244, 0.738667) 100%
   );
+}
 
-  .h-landing {
-    height: 600px;
-  }
+.height-100 {
+  padding-top: 200px !important;
 }
 </style>
