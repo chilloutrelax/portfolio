@@ -11,7 +11,7 @@
       </div>
       <div class="menu-box">
         <ul class="menu-items">
-          <li><a href="/#">About me</a></li>
+          <li><a href="/#aboutme">About me</a></li>
           <li><router-link to="/portfolio">Portfolio</router-link></li>
           <li><router-link to="/contact">Contact</router-link></li>
         </ul>

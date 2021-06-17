@@ -1,7 +1,13 @@
 <template>
   <div class="landing-area container-fluid">
     <div class="row height-100">
-      <div class="col-8 p-0">
+      <div
+        data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="1200"
+        class="col-8 p-0"
+      >
         <LandingName
           fullName="Riko Murutalu"
           title="Front-end developer"
@@ -12,8 +18,13 @@
       </div>
     </div>
 
-    <div class="lading-bottom">
-      <!-- <BottomArea></BottomArea> -->
+    <BottomArea
+      bottomText="About me"
+      bottomDesc="Scroll down to know more."
+    ></BottomArea>
+
+    <div class="arrow-down">
+      <i class="fas fa-chevron-down"></i>
     </div>
   </div>
 </template>
@@ -21,20 +32,20 @@
 <script>
 import LandingName from "@/components/Landing/LandingName";
 import LandingImg from "@/components/Landing/LandingImg";
-// import BottomArea from "@/components/Landing/BottomArea";
+import BottomArea from "@/components/Landing/BottomArea";
 
 export default {
   components: {
     LandingName,
     LandingImg,
-    // BottomArea,
+    BottomArea,
   },
 };
 </script>
 
 <style lang="scss">
 .landing-area {
-  height: 95vh;
+  height: 90vh;
   background: linear-gradient(
     180deg,
     rgba(75, 163, 195, 0.88485) 0%,
@@ -46,6 +57,7 @@ export default {
 }
 
 .height-100 {
-  padding-top: 200px !important;
+  padding-top: 10% !important;
+  height: 50%;
 }
 </style>

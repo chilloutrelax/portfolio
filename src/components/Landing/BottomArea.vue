@@ -1,41 +1,88 @@
 <template>
-  <div class="landing-bottom container-fluid">
-    <div class="bottom-content">
-      <span class="vertical-white"></span>
-      <div class="about-me-ad">
-        <h1>About me</h1>
-        <h2>Scroll down to know more.</h2>
+  <div class="landing-bottom">
+    <span class="vertical-white">
+      <span class="line-vert"></span>
+      <div class="bottom-text">
+        <h1><span class="hover"></span>{{ bottomText }}</h1>
+        <h2>{{ bottomDesc }}</h2>
       </div>
-    </div>
+    </span>
   </div>
 </template>
 
+<script>
+export default {
+  name: "BottomArea",
+  props: {
+    bottomText: String,
+    bottomDesc: String,
+  },
+};
+</script>
+
 <style lang="scss">
+@import "@/assets/variables.scss";
+
 .landing-bottom {
   position: absolute;
-  bottom: 30px;
+  bottom: 100px;
   left: 0;
   width: 100%;
-  background: white;
 
-  .bottom-content {
-    .vertical-white {
-      overflow: hidden;
-      height: 200px;
-      width: 200%;
-      background: white;
-      top: 0;
-      left: -10%;
+  .vertical-white {
+    position: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    transform: rotate(10deg);
+    left: -100px;
+    width: 100%;
+    height: 200px;
+    background: white;
+    z-index: 1;
+
+    .line-vert {
       position: absolute;
-      transform: rotate(9deg);
-      z-index: 0;
+      width: 50%;
+      left: 200px;
+      height: 0px;
+      top: -5px;
+      border-top: 2px solid rgba(23, 86, 118, 0.5);
     }
 
-    .about-me-ad {
-      position: absolute;
-      z-index: 2;
-      top: -50px;
-      transform: rotate(9deg);
+    .bottom-text {
+      position: relative;
+      padding-left: 10%;
+      padding-top: 2%;
+      width: 30%;
+
+      h1 {
+        width: 100%;
+        position: relative;
+        padding: 0;
+        margin: 0;
+        font-weight: 200;
+        text-align: center;
+        letter-spacing: 0.2em;
+
+        .hover {
+          position: absolute;
+          top: 22px;
+          left: -2px;
+          width: 100%;
+          height: 16px;
+          background: rgba(75, 163, 195, 0.27);
+        }
+      }
+
+      h2 {
+        padding: 0;
+        margin: 0;
+        font-weight: 200;
+        font-size: 1vw;
+        text-align: center;
+        color: $color1;
+      }
     }
   }
 }
