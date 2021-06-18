@@ -1,35 +1,49 @@
 <template>
-  <header>
-    <nav class="navbar container">
-      <div class="brand">
-        <router-link to="/">
-          <div class="h-text">
-            <span class="header-text-1">R</span>
-            <span class="header-text-2">M</span>
-          </div>
-        </router-link>
-      </div>
-      <div class="menu-box">
-        <ul class="menu-items">
-          <li><a href="/#aboutme">About me</a></li>
-          <li><router-link to="/portfolio">Portfolio</router-link></li>
-          <li><router-link to="/contact">Contact</router-link></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+  <scroll-fixed-header
+    :fixed.sync="fixed"
+    :threshold="56"
+    style="background:white;  transition: width 2s, height 4s;"
+  >
+    <header>
+      <nav class="navbar container">
+        <div class="brand">
+          <router-link to="/">
+            <div class="h-text">
+              <span class="header-text-1">R</span>
+              <span class="header-text-2">M</span>
+            </div>
+          </router-link>
+        </div>
+        <div class="menu-box">
+          <ul class="menu-items">
+            <li><router-link to="/">Home</router-link></li>
+            <li><a href="/#aboutme">About me</a></li>
+            <li><router-link to="/portfolio">Portfolio</router-link></li>
+            <li><router-link to="/contact">Contact</router-link></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </scroll-fixed-header>
 </template>
 
 <script>
-export default {};
+export default {
+  name: "Timer",
+  data() {
+    return {
+      fixed: false,
+    };
+  },
+};
 </script>
 
 <style lang="scss">
 @import "@/assets/variables.scss";
 
 header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.082);
   .navbar {
-    border-bottom: 1px solid rgba(171, 163, 89, 0.1);
     .brand {
       display: flex;
 

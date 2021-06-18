@@ -39,15 +39,16 @@ export default {
     width: 100%;
     height: 200px;
     background: white;
-    z-index: 1;
+    z-index: 0;
 
     .line-vert {
       position: absolute;
       width: 50%;
-      left: 200px;
+      left: 100px;
       height: 0px;
       top: -5px;
       border-top: 2px solid rgba(23, 86, 118, 0.5);
+      z-index: 0;
     }
 
     .bottom-text {

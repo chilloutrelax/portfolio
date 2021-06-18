@@ -1,5 +1,5 @@
 <template>
-  <div class="about-header">
+  <div class="about-header" data-aos="zoom-in">
     <div class="about-title">
       <h1><span class="line-header"></span>{{ headerTitle }}</h1>
       <h2>{{ headerSub }}</h2>
@@ -37,10 +37,10 @@ export default {
 
     .line-header {
       position: absolute;
-      top: 81px;
+      top: 64px;
       left: 10%;
       width: 80%;
-      height: 19px;
+      height: 14px;
       background: rgba(75, 163, 195, 0.27);
     }
 
@@ -48,17 +48,15 @@ export default {
       font-family: $font2;
       font-style: normal;
       font-weight: 200;
-      font-size: 45px;
-      line-height: 75px;
+      font-size: 2rem;
       letter-spacing: 0.2em;
     }
     h2 {
       font-family: Roboto;
       font-style: normal;
+      top: 10px;
       font-weight: 300;
-      font-size: 24px;
-      line-height: 28px;
-      display: flex;
+      font-size: 1rem;
       align-items: center;
       letter-spacing: 0.2em;
     }

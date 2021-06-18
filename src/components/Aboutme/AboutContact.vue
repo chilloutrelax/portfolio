@@ -1,9 +1,11 @@
 <template>
   <div class="about-contact">
-    <AboutHeader
-      headerTitle="Contact me"
-      headerSub="for further information"
-    ></AboutHeader>
+    <router-link to="/contact">
+      <AboutHeader
+        headerTitle="Contact me"
+        headerSub="for further information"
+      ></AboutHeader>
+    </router-link>
   </div>
 </template>
 
@@ -16,3 +18,15 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+a {
+  text-decoration: none;
+  color: #000 !important;
+
+  :hover {
+    color: #422629ba;
+    text-transform: bold !important;
+  }
+}
+</style>
